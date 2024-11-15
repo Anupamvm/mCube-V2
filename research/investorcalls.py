@@ -1,0 +1,4 @@
+#getcalls
+#sendtollm
+#saveanalysis
+#convertcalltotext

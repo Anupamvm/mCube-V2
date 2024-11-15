@@ -1,0 +1,4 @@
+#getniftyreturns
+#getportfolioreturns
+#getstranglereturns
+#getfuturereturns
