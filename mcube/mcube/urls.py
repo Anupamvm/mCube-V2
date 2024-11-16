@@ -28,7 +28,11 @@ urlpatterns = [
     path('', r.views.home, name='home'),
     path('f/', f.views.home, name='home'),
     path('o/', o.views.home, name='home'),
+
     path('p/', p.views.home, name='home'),
+    path('p/login', p.views.login_view, name='login'),
+    path('p/holdings', p.views.get_holdings_view, name='getholdings'),
+
     path('r/', r.views.home, name='home'),
     path('a/', a.views.home, name='home'),
 ]

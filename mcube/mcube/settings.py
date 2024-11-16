@@ -134,3 +134,15 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# settings.py
+
+KSNEO = {
+    "CONSUMER_KEY": "NkmJfGnAehLpdDm3wSPFR7iCMj4a",
+    "CONSUMER_SECRET": "H8Q60_oBa2PkSOBJXnk7zbOvGqUa",
+    "USERNAME" : "CLIENT46778",
+    "PASSWORD" : "Anupamvm2@",
+    "PAN" : "AAQHA1835B",
+    "MPIN" : "284321",
+    
+}
