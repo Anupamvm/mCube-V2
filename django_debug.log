@@ -1361,3 +1361,273 @@ It is recommended to set callbacks to handle your own logic on events.
 
 INFO 2024-11-18 07:57:30,011 basehttp "GET /p/getquote?symbol=Nifty%2050&segment=nse_cm&index=True HTTP/1.1" 200 26
 INFO 2024-11-18 07:57:30,011 basehttp "GET /p/getquote?symbol=Nifty%2050&segment=nse_cm&index=True HTTP/1.1" 200 26
+INFO 2024-11-18 09:44:40,169 utils Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO 2024-11-18 09:44:40,170 utils NumExpr defaulting to 8 threads.
+INFO 2024-11-18 09:44:45,994 basehttp "GET / HTTP/1.1" 200 32
+INFO 2024-11-18 09:44:45,994 basehttp "GET / HTTP/1.1" 200 32
+INFO 2024-11-18 09:44:49,949 basehttp "GET /admin/p/holding/ HTTP/1.1" 200 14769
+INFO 2024-11-18 09:44:49,949 basehttp "GET /admin/p/holding/ HTTP/1.1" 200 14769
+INFO 2024-11-18 09:44:49,984 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+INFO 2024-11-18 09:44:49,984 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+INFO 2024-11-18 09:44:49,987 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+INFO 2024-11-18 09:44:49,987 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+INFO 2024-11-18 09:44:49,992 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2024-11-18 09:44:49,992 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2024-11-18 09:44:49,996 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:44:49,996 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:44:49,997 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO 2024-11-18 09:44:49,997 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO 2024-11-18 09:44:50,075 basehttp "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2024-11-18 09:44:50,075 basehttp "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2024-11-18 09:44:50,081 basehttp "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2024-11-18 09:44:50,081 basehttp "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2024-11-18 09:44:50,082 basehttp "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2024-11-18 09:44:50,082 basehttp "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2024-11-18 09:45:01,578 basehttp "GET /admin/p/holding/ HTTP/1.1" 200 14769
+INFO 2024-11-18 09:45:01,578 basehttp "GET /admin/p/holding/ HTTP/1.1" 200 14769
+INFO 2024-11-18 09:45:01,606 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:45:01,606 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:47:15,335 utils Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO 2024-11-18 09:47:15,336 utils NumExpr defaulting to 8 threads.
+INFO 2024-11-18 09:47:35,139 basehttp "GET /admin/p/holding/ HTTP/1.1" 200 15253
+INFO 2024-11-18 09:47:35,139 basehttp "GET /admin/p/holding/ HTTP/1.1" 200 15253
+INFO 2024-11-18 09:47:35,167 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:47:35,167 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:47:38,057 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 6997
+INFO 2024-11-18 09:47:38,057 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 6997
+INFO 2024-11-18 09:47:38,083 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-11-18 09:47:38,083 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-11-18 09:47:38,088 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:47:38,088 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:49:47,165 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 9107
+INFO 2024-11-18 09:49:47,165 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 9107
+INFO 2024-11-18 09:49:47,194 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:49:47,194 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:49:49,208 basehttp "GET /admin/r/quote/1/change/ HTTP/1.1" 200 16332
+INFO 2024-11-18 09:49:49,208 basehttp "GET /admin/r/quote/1/change/ HTTP/1.1" 200 16332
+INFO 2024-11-18 09:49:49,231 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+INFO 2024-11-18 09:49:49,231 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+INFO 2024-11-18 09:49:49,242 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:49:49,242 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:50:56,358 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 9107
+INFO 2024-11-18 09:50:56,358 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 9107
+INFO 2024-11-18 09:50:56,387 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:50:56,387 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:50:59,103 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 9107
+INFO 2024-11-18 09:50:59,103 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 9107
+INFO 2024-11-18 09:50:59,131 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:50:59,131 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:56:24,966 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 9107
+INFO 2024-11-18 09:56:24,966 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 9107
+INFO 2024-11-18 09:56:24,997 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:56:24,997 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:58:37,053 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 9580
+INFO 2024-11-18 09:58:37,053 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 9580
+INFO 2024-11-18 09:58:37,084 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:58:37,084 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:59:12,455 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 9988
+INFO 2024-11-18 09:59:12,455 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 9988
+INFO 2024-11-18 09:59:12,482 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 09:59:12,482 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+DEBUG 2024-11-18 10:01:04,020 connectionpool Starting new HTTPS connection (1): napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:01:04,214 connectionpool https://napi.kotaksecurities.com:443 "POST /oauth2/token HTTP/1.1" 200 None
+DEBUG 2024-11-18 10:01:04,222 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:01:04,418 connectionpool https://gw-napi.kotaksecurities.com:443 "POST /login/1.0/login/v2/validate HTTP/1.1" 201 None
+DEBUG 2024-11-18 10:01:04,423 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:01:04,607 connectionpool https://gw-napi.kotaksecurities.com:443 "POST /login/1.0/login/otp/generate HTTP/1.1" 201 None
+DEBUG 2024-11-18 10:01:04,612 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:01:04,752 connectionpool https://gw-napi.kotaksecurities.com:443 "POST /login/1.0/login/v2/validate HTTP/1.1" 201 None
+INFO 2024-11-18 10:01:04,754 ksapi Login successful and client initialized.
+INFO 2024-11-18 10:01:04,755 basehttp "GET /p/login HTTP/1.1" 200 40
+INFO 2024-11-18 10:01:04,755 basehttp "GET /p/login HTTP/1.1" 200 40
+DEBUG 2024-11-18 10:01:09,776 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:01:10,056 connectionpool https://gw-napi.kotaksecurities.com:443 "GET /Files/1.0/masterscrip/v1/file-paths HTTP/1.1" 200 None
+DEBUG 2024-11-18 10:01:10,060 connectionpool Starting new HTTPS connection (1): lapi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:01:10,257 connectionpool https://lapi.kotaksecurities.com:443 "GET /wso2-scripmaster/v1/prod/2024-11-18/transformed/nse_cm.csv HTTP/1.1" 200 2758322
+INFO 2024-11-18 10:01:10,936 ksapi Raw search result: [{'pSymbol': 25946, 'pGroup': 'N0', 'pExchSeg': 'nse_cm', 'pInstType': None, 'pSymbolName': '835TCSL27', 'pTrdSymbol': '835TCSL27-N0', 'pOptionType': None, 'pScripRefKey': '835TCSL27-N0', 'pISIN': 'INE729N07065', 'pAssetCode': None, 'pSubGroup': None, 'pCombinedSymbol': None, 'pDesc': 'TVS CREDIT 8.35% 2027', 'pAmcCode': None, 'pContractId': None, 'dTickSize': 1, 'lLotSize': 1, 'lExpiryDate': -1, 'lMultiplier': -1, 'lPrecision': 2, 'dStrikePrice;': -1, 'pExchange': 'NSE', 'pInstName': None, 'pExpiryDate': None, 'pIssueDate': 1414800000.0, 'pMaturityDate': None, 'pListingDate': 1414800000.0, 'pNoDelStartDate': 0.0, 'pNoDelEndDate': 0.0, 'pBookClsStartDate': 0.0, 'pBookClsEndDate': 0.0, 'pRecordDate': 0.0, 'pCreditRating': '80000.00-120000.00', 'pReAdminDate': 0.0, 'pExpulsionDate': 0.0, 'pLocalUpdateTime': 1416069605.0, 'pDeliveryUnits': None, 'pPriceUnits': None, 'pLastTradingDate': None, 'pTenderPeridEndDate': None, 'pTenderPeridStartDate': None, 'pSellVarMargin': None, 'pBuyVarMargin': None, 'pInstrumentInfo': None, 'pRemarksText': None, 'pSegment': 'CASH', 'pNav': None, 'pNavDate': None, 'pMfAmt': None, 'pSipSecurity': None, 'pFaceValue': 10000000.0, 'pTrdUnits': None, 'pExerciseStartDate': None, 'pExerciseEndDate': None, 'pElmMargin': 0.0, 'pVarMargin': 20.0, 'pTotProposedLimitValue': None, 'pScripBasePrice': None, 'pSettlementType': 'T+1', 'pCurrectionTime': 315513000.0, 'iPermittedToTrade': 0, 'iBoardLotQty': 1, 'iMaxOrderSize': 1000, 'iLotSize': 1, 'dOpenInterest': 0, 'dHighPriceRange': 12000000.0, 'dLowPriceRange': 8000000.0, 'dPriceNum': 1, 'dGenDen': 1, 'dGenNum': 1, 'dPriceQuatation': 0, 'dIssuerate': 0, 'dPriceDen': 1, 'dWarningQty': 0, 'dIssueCapital': 50000.0, 'dExposureMargin': 0, 'dMinRedemptionQty': 0, 'lFreezeQty': 1000}, {'pSymbol': 3799, 'pGroup': 'EQ', 'pExchSeg': 'nse_cm', 'pInstType': None, 'pSymbolName': 'WSTCSTPAPR', 'pTrdSymbol': 'WSTCSTPAPR-EQ', 'pOptionType': None, 'pScripRefKey': 'WSTCSTPAPR', 'pISIN': 'INE976A01021', 'pAssetCode': None, 'pSubGroup': None, 'pCombinedSymbol': None, 'pDesc': 'WEST COAST PAPER MILLS LT', 'pAmcCode': None, 'pContractId': None, 'dTickSize': 5, 'lLotSize': 1, 'lExpiryDate': -1, 'lMultiplier': -1, 'lPrecision': 2, 'dStrikePrice;': -1, 'pExchange': 'NSE', 'pInstName': None, 'pExpiryDate': None, 'pIssueDate': 484531200.0, 'pMaturityDate': None, 'pListingDate': 0.0, 'pNoDelStartDate': 0.0, 'pNoDelEndDate': 0.0, 'pBookClsStartDate': 1407456000.0, 'pBookClsEndDate': 1408060800.0, 'pRecordDate': 0.0, 'pCreditRating': '437.05-655.55', 'pReAdminDate': 0.0, 'pExpulsionDate': 0.0, 'pLocalUpdateTime': 1416077500.0, 'pDeliveryUnits': None, 'pPriceUnits': None, 'pLastTradingDate': None, 'pTenderPeridEndDate': None, 'pTenderPeridStartDate': None, 'pSellVarMargin': None, 'pBuyVarMargin': None, 'pInstrumentInfo': None, 'pRemarksText': None, 'pSegment': 'CASH', 'pNav': None, 'pNavDate': None, 'pMfAmt': None, 'pSipSecurity': None, 'pFaceValue': 200.0, 'pTrdUnits': None, 'pExerciseStartDate': None, 'pExerciseEndDate': None, 'pElmMargin': 0.0, 'pVarMargin': 20.0, 'pTotProposedLimitValue': None, 'pScripBasePrice': None, 'pSettlementType': 'T+1', 'pCurrectionTime': 315513000.0, 'iPermittedToTrade': 0, 'iBoardLotQty': 1, 'iMaxOrderSize': 183021, 'iLotSize': 1, 'dOpenInterest': 0, 'dHighPriceRange': 65555.0, 'dLowPriceRange': 43705.0, 'dPriceNum': 1, 'dGenDen': 1, 'dGenNum': 1, 'dPriceQuatation': 0, 'dIssuerate': 0, 'dPriceDen': 1, 'dWarningQty': 0, 'dIssueCapital': 66048900.0, 'dExposureMargin': 0, 'dMinRedemptionQty': 0, 'lFreezeQty': 183021}, {'pSymbol': 11536, 'pGroup': 'EQ', 'pExchSeg': 'nse_cm', 'pInstType': None, 'pSymbolName': 'TCS', 'pTrdSymbol': 'TCS-EQ', 'pOptionType': None, 'pScripRefKey': 'TCS', 'pISIN': 'INE467B01029', 'pAssetCode': None, 'pSubGroup': None, 'pCombinedSymbol': None, 'pDesc': 'TATA CONSULTANCY SERV LT', 'pAmcCode': None, 'pContractId': None, 'dTickSize': 5, 'lLotSize': 1, 'lExpiryDate': -1, 'lMultiplier': -1, 'lPrecision': 2, 'dStrikePrice;': -1, 'pExchange': 'NSE', 'pInstName': None, 'pExpiryDate': None, 'pIssueDate': 777859200.0, 'pMaturityDate': None, 'pListingDate': 777859200.0, 'pNoDelStartDate': 0.0, 'pNoDelEndDate': 0.0, 'pBookClsStartDate': 0.0, 'pBookClsEndDate': 0.0, 'pRecordDate': 1413676800.0, 'pCreditRating': '3731.35-4560.45', 'pReAdminDate': 0.0, 'pExpulsionDate': 0.0, 'pLocalUpdateTime': 1416077500.0, 'pDeliveryUnits': None, 'pPriceUnits': None, 'pLastTradingDate': None, 'pTenderPeridEndDate': None, 'pTenderPeridStartDate': None, 'pSellVarMargin': None, 'pBuyVarMargin': None, 'pInstrumentInfo': None, 'pRemarksText': None, 'pSegment': 'CASH', 'pNav': None, 'pNavDate': None, 'pMfAmt': None, 'pSipSecurity': None, 'pFaceValue': 100.0, 'pTrdUnits': None, 'pExerciseStartDate': None, 'pExerciseEndDate': None, 'pElmMargin': 0.0, 'pVarMargin': 20.0, 'pTotProposedLimitValue': None, 'pScripBasePrice': None, 'pSettlementType': 'T+1', 'pCurrectionTime': 315513000.0, 'iPermittedToTrade': 0, 'iBoardLotQty': 1, 'iMaxOrderSize': 21708, 'iLotSize': 1, 'dOpenInterest': 0, 'dHighPriceRange': 456045.0, 'dLowPriceRange': 373135.0, 'dPriceNum': 1, 'dGenDen': 1, 'dGenNum': 1, 'dPriceQuatation': 0, 'dIssuerate': 0, 'dPriceDen': 1, 'dWarningQty': 0, 'dIssueCapital': 3618090000.0, 'dExposureMargin': 0, 'dMinRedemptionQty': 0, 'lFreezeQty': 21708}, {'pSymbol': 12825, 'pGroup': 'BL', 'pExchSeg': 'nse_cm', 'pInstType': None, 'pSymbolName': 'TCS', 'pTrdSymbol': 'TCS-BL', 'pOptionType': None, 'pScripRefKey': 'TCS-BL', 'pISIN': 'INE467B01029', 'pAssetCode': None, 'pSubGroup': None, 'pCombinedSymbol': None, 'pDesc': 'TATA CONSULTANCY SERV LT', 'pAmcCode': None, 'pContractId': None, 'dTickSize': 5, 'lLotSize': 1, 'lExpiryDate': -1, 'lMultiplier': -1, 'lPrecision': 2, 'dStrikePrice;': -1, 'pExchange': 'NSE', 'pInstName': None, 'pExpiryDate': None, 'pIssueDate': 816220800.0, 'pMaturityDate': None, 'pListingDate': 816220800.0, 'pNoDelStartDate': 0.0, 'pNoDelEndDate': 0.0, 'pBookClsStartDate': 0.0, 'pBookClsEndDate': 0.0, 'pRecordDate': 1413676800.0, 'pCreditRating': '4104.45-4187.35', 'pReAdminDate': 0.0, 'pExpulsionDate': 0.0, 'pLocalUpdateTime': 1416071130.0, 'pDeliveryUnits': None, 'pPriceUnits': None, 'pLastTradingDate': None, 'pTenderPeridEndDate': None, 'pTenderPeridStartDate': None, 'pSellVarMargin': None, 'pBuyVarMargin': None, 'pInstrumentInfo': None, 'pRemarksText': None, 'pSegment': 'CASH', 'pNav': None, 'pNavDate': None, 'pMfAmt': None, 'pSipSecurity': None, 'pFaceValue': 100.0, 'pTrdUnits': None, 'pExerciseStartDate': None, 'pExerciseEndDate': None, 'pElmMargin': None, 'pVarMargin': None, 'pTotProposedLimitValue': None, 'pScripBasePrice': None, 'pSettlementType': 'T+1', 'pCurrectionTime': 315513000.0, 'iPermittedToTrade': 0, 'iBoardLotQty': 1, 'iMaxOrderSize': 0, 'iLotSize': 1, 'dOpenInterest': 0, 'dHighPriceRange': 418735.0, 'dLowPriceRange': 410445.0, 'dPriceNum': 1, 'dGenDen': 1, 'dGenNum': 1, 'dPriceQuatation': 0, 'dIssuerate': 0, 'dPriceDen': 1, 'dWarningQty': 0, 'dIssueCapital': 3618090000.0, 'dExposureMargin': 0, 'dMinRedemptionQty': 0, 'lFreezeQty': 99999999}, {'pSymbol': 12897, 'pGroup': 'BL', 'pExchSeg': 'nse_cm', 'pInstType': None, 'pSymbolName': 'WSTCSTPAPR', 'pTrdSymbol': 'WSTCSTPAPR-BL', 'pOptionType': None, 'pScripRefKey': 'WSTCSTPAPR-BL', 'pISIN': 'INE976A01021', 'pAssetCode': None, 'pSubGroup': None, 'pCombinedSymbol': None, 'pDesc': 'WEST COAST PAPER MILLS LT', 'pAmcCode': None, 'pContractId': None, 'dTickSize': 5, 'lLotSize': 1, 'lExpiryDate': -1, 'lMultiplier': -1, 'lPrecision': 2, 'dStrikePrice;': -1, 'pExchange': 'NSE', 'pInstName': None, 'pExpiryDate': None, 'pIssueDate': 816220800.0, 'pMaturityDate': None, 'pListingDate': 816220800.0, 'pNoDelStartDate': 0.0, 'pNoDelEndDate': 0.0, 'pBookClsStartDate': 1407456000.0, 'pBookClsEndDate': 1408060800.0, 'pRecordDate': 0.0, 'pCreditRating': '540.85-551.75', 'pReAdminDate': 0.0, 'pExpulsionDate': 0.0, 'pLocalUpdateTime': 1416071122.0, 'pDeliveryUnits': None, 'pPriceUnits': None, 'pLastTradingDate': None, 'pTenderPeridEndDate': None, 'pTenderPeridStartDate': None, 'pSellVarMargin': None, 'pBuyVarMargin': None, 'pInstrumentInfo': None, 'pRemarksText': None, 'pSegment': 'CASH', 'pNav': None, 'pNavDate': None, 'pMfAmt': None, 'pSipSecurity': None, 'pFaceValue': 200.0, 'pTrdUnits': None, 'pExerciseStartDate': None, 'pExerciseEndDate': None, 'pElmMargin': None, 'pVarMargin': None, 'pTotProposedLimitValue': None, 'pScripBasePrice': None, 'pSettlementType': 'T+1', 'pCurrectionTime': 315513000.0, 'iPermittedToTrade': 0, 'iBoardLotQty': 1, 'iMaxOrderSize': 0, 'iLotSize': 1, 'dOpenInterest': 0, 'dHighPriceRange': 55175.0, 'dLowPriceRange': 54085.0, 'dPriceNum': 1, 'dGenDen': 1, 'dGenNum': 1, 'dPriceQuatation': 0, 'dIssuerate': 0, 'dPriceDen': 1, 'dWarningQty': 0, 'dIssueCapital': 66048900.0, 'dExposureMargin': 0, 'dMinRedemptionQty': 0, 'lFreezeQty': 99999999}]
+INFO 2024-11-18 10:01:10,945 basehttp "GET /p/search HTTP/1.1" 200 22
+INFO 2024-11-18 10:01:10,945 basehttp "GET /p/search HTTP/1.1" 200 22
+INFO 2024-11-18 10:01:27,606 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 10388
+INFO 2024-11-18 10:01:27,606 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 10388
+INFO 2024-11-18 10:01:27,633 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 10:01:27,633 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 10:02:02,036 basehttp "GET /p/ HTTP/1.1" 200 383
+INFO 2024-11-18 10:02:02,036 basehttp "GET /p/ HTTP/1.1" 200 383
+DEBUG 2024-11-18 10:02:04,071 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:02:04,200 connectionpool https://gw-napi.kotaksecurities.com:443 "GET /Files/1.0/masterscrip/v1/file-paths HTTP/1.1" 401 None
+INFO 2024-11-18 10:02:04,202 ksapi Raw search result: {'Error': KeyError('data'), 'message': 'Exchange Segment is not available'}
+ERROR 2024-11-18 10:02:04,203 ksapi Error during search: 'pGroup'
+ERROR 2024-11-18 10:02:04,204 log Internal Server Error: /p/getquote
+ERROR 2024-11-18 10:02:04,204 log Internal Server Error: /p/getquote
+ERROR 2024-11-18 10:02:04,204 basehttp "GET /p/getquote HTTP/1.1" 500 34
+ERROR 2024-11-18 10:02:04,204 basehttp "GET /p/getquote HTTP/1.1" 500 34
+DEBUG 2024-11-18 10:02:09,432 connectionpool Starting new HTTPS connection (1): napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:02:09,865 connectionpool https://napi.kotaksecurities.com:443 "POST /oauth2/token HTTP/1.1" 200 None
+DEBUG 2024-11-18 10:02:09,871 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:02:10,039 connectionpool https://gw-napi.kotaksecurities.com:443 "POST /login/1.0/login/v2/validate HTTP/1.1" 201 None
+DEBUG 2024-11-18 10:02:10,044 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:02:10,213 connectionpool https://gw-napi.kotaksecurities.com:443 "POST /login/1.0/login/otp/generate HTTP/1.1" 201 None
+DEBUG 2024-11-18 10:02:10,217 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:02:10,360 connectionpool https://gw-napi.kotaksecurities.com:443 "POST /login/1.0/login/v2/validate HTTP/1.1" 201 None
+INFO 2024-11-18 10:02:10,362 ksapi Login successful and client initialized.
+INFO 2024-11-18 10:02:10,363 basehttp "GET /p/login HTTP/1.1" 200 40
+INFO 2024-11-18 10:02:10,363 basehttp "GET /p/login HTTP/1.1" 200 40
+DEBUG 2024-11-18 10:02:12,939 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:02:13,245 connectionpool https://gw-napi.kotaksecurities.com:443 "GET /Files/1.0/masterscrip/v1/file-paths HTTP/1.1" 200 None
+DEBUG 2024-11-18 10:02:13,250 connectionpool Starting new HTTPS connection (1): lapi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:02:13,516 connectionpool https://lapi.kotaksecurities.com:443 "GET /wso2-scripmaster/v1/prod/2024-11-18/transformed/nse_cm.csv HTTP/1.1" 200 2758322
+INFO 2024-11-18 10:02:14,751 ksapi Raw search result: [{'pSymbol': 25946, 'pGroup': 'N0', 'pExchSeg': 'nse_cm', 'pInstType': None, 'pSymbolName': '835TCSL27', 'pTrdSymbol': '835TCSL27-N0', 'pOptionType': None, 'pScripRefKey': '835TCSL27-N0', 'pISIN': 'INE729N07065', 'pAssetCode': None, 'pSubGroup': None, 'pCombinedSymbol': None, 'pDesc': 'TVS CREDIT 8.35% 2027', 'pAmcCode': None, 'pContractId': None, 'dTickSize': 1, 'lLotSize': 1, 'lExpiryDate': -1, 'lMultiplier': -1, 'lPrecision': 2, 'dStrikePrice;': -1, 'pExchange': 'NSE', 'pInstName': None, 'pExpiryDate': None, 'pIssueDate': 1414800000.0, 'pMaturityDate': None, 'pListingDate': 1414800000.0, 'pNoDelStartDate': 0.0, 'pNoDelEndDate': 0.0, 'pBookClsStartDate': 0.0, 'pBookClsEndDate': 0.0, 'pRecordDate': 0.0, 'pCreditRating': '80000.00-120000.00', 'pReAdminDate': 0.0, 'pExpulsionDate': 0.0, 'pLocalUpdateTime': 1416069605.0, 'pDeliveryUnits': None, 'pPriceUnits': None, 'pLastTradingDate': None, 'pTenderPeridEndDate': None, 'pTenderPeridStartDate': None, 'pSellVarMargin': None, 'pBuyVarMargin': None, 'pInstrumentInfo': None, 'pRemarksText': None, 'pSegment': 'CASH', 'pNav': None, 'pNavDate': None, 'pMfAmt': None, 'pSipSecurity': None, 'pFaceValue': 10000000.0, 'pTrdUnits': None, 'pExerciseStartDate': None, 'pExerciseEndDate': None, 'pElmMargin': 0.0, 'pVarMargin': 20.0, 'pTotProposedLimitValue': None, 'pScripBasePrice': None, 'pSettlementType': 'T+1', 'pCurrectionTime': 315513000.0, 'iPermittedToTrade': 0, 'iBoardLotQty': 1, 'iMaxOrderSize': 1000, 'iLotSize': 1, 'dOpenInterest': 0, 'dHighPriceRange': 12000000.0, 'dLowPriceRange': 8000000.0, 'dPriceNum': 1, 'dGenDen': 1, 'dGenNum': 1, 'dPriceQuatation': 0, 'dIssuerate': 0, 'dPriceDen': 1, 'dWarningQty': 0, 'dIssueCapital': 50000.0, 'dExposureMargin': 0, 'dMinRedemptionQty': 0, 'lFreezeQty': 1000}, {'pSymbol': 3799, 'pGroup': 'EQ', 'pExchSeg': 'nse_cm', 'pInstType': None, 'pSymbolName': 'WSTCSTPAPR', 'pTrdSymbol': 'WSTCSTPAPR-EQ', 'pOptionType': None, 'pScripRefKey': 'WSTCSTPAPR', 'pISIN': 'INE976A01021', 'pAssetCode': None, 'pSubGroup': None, 'pCombinedSymbol': None, 'pDesc': 'WEST COAST PAPER MILLS LT', 'pAmcCode': None, 'pContractId': None, 'dTickSize': 5, 'lLotSize': 1, 'lExpiryDate': -1, 'lMultiplier': -1, 'lPrecision': 2, 'dStrikePrice;': -1, 'pExchange': 'NSE', 'pInstName': None, 'pExpiryDate': None, 'pIssueDate': 484531200.0, 'pMaturityDate': None, 'pListingDate': 0.0, 'pNoDelStartDate': 0.0, 'pNoDelEndDate': 0.0, 'pBookClsStartDate': 1407456000.0, 'pBookClsEndDate': 1408060800.0, 'pRecordDate': 0.0, 'pCreditRating': '437.05-655.55', 'pReAdminDate': 0.0, 'pExpulsionDate': 0.0, 'pLocalUpdateTime': 1416077500.0, 'pDeliveryUnits': None, 'pPriceUnits': None, 'pLastTradingDate': None, 'pTenderPeridEndDate': None, 'pTenderPeridStartDate': None, 'pSellVarMargin': None, 'pBuyVarMargin': None, 'pInstrumentInfo': None, 'pRemarksText': None, 'pSegment': 'CASH', 'pNav': None, 'pNavDate': None, 'pMfAmt': None, 'pSipSecurity': None, 'pFaceValue': 200.0, 'pTrdUnits': None, 'pExerciseStartDate': None, 'pExerciseEndDate': None, 'pElmMargin': 0.0, 'pVarMargin': 20.0, 'pTotProposedLimitValue': None, 'pScripBasePrice': None, 'pSettlementType': 'T+1', 'pCurrectionTime': 315513000.0, 'iPermittedToTrade': 0, 'iBoardLotQty': 1, 'iMaxOrderSize': 183021, 'iLotSize': 1, 'dOpenInterest': 0, 'dHighPriceRange': 65555.0, 'dLowPriceRange': 43705.0, 'dPriceNum': 1, 'dGenDen': 1, 'dGenNum': 1, 'dPriceQuatation': 0, 'dIssuerate': 0, 'dPriceDen': 1, 'dWarningQty': 0, 'dIssueCapital': 66048900.0, 'dExposureMargin': 0, 'dMinRedemptionQty': 0, 'lFreezeQty': 183021}, {'pSymbol': 11536, 'pGroup': 'EQ', 'pExchSeg': 'nse_cm', 'pInstType': None, 'pSymbolName': 'TCS', 'pTrdSymbol': 'TCS-EQ', 'pOptionType': None, 'pScripRefKey': 'TCS', 'pISIN': 'INE467B01029', 'pAssetCode': None, 'pSubGroup': None, 'pCombinedSymbol': None, 'pDesc': 'TATA CONSULTANCY SERV LT', 'pAmcCode': None, 'pContractId': None, 'dTickSize': 5, 'lLotSize': 1, 'lExpiryDate': -1, 'lMultiplier': -1, 'lPrecision': 2, 'dStrikePrice;': -1, 'pExchange': 'NSE', 'pInstName': None, 'pExpiryDate': None, 'pIssueDate': 777859200.0, 'pMaturityDate': None, 'pListingDate': 777859200.0, 'pNoDelStartDate': 0.0, 'pNoDelEndDate': 0.0, 'pBookClsStartDate': 0.0, 'pBookClsEndDate': 0.0, 'pRecordDate': 1413676800.0, 'pCreditRating': '3731.35-4560.45', 'pReAdminDate': 0.0, 'pExpulsionDate': 0.0, 'pLocalUpdateTime': 1416077500.0, 'pDeliveryUnits': None, 'pPriceUnits': None, 'pLastTradingDate': None, 'pTenderPeridEndDate': None, 'pTenderPeridStartDate': None, 'pSellVarMargin': None, 'pBuyVarMargin': None, 'pInstrumentInfo': None, 'pRemarksText': None, 'pSegment': 'CASH', 'pNav': None, 'pNavDate': None, 'pMfAmt': None, 'pSipSecurity': None, 'pFaceValue': 100.0, 'pTrdUnits': None, 'pExerciseStartDate': None, 'pExerciseEndDate': None, 'pElmMargin': 0.0, 'pVarMargin': 20.0, 'pTotProposedLimitValue': None, 'pScripBasePrice': None, 'pSettlementType': 'T+1', 'pCurrectionTime': 315513000.0, 'iPermittedToTrade': 0, 'iBoardLotQty': 1, 'iMaxOrderSize': 21708, 'iLotSize': 1, 'dOpenInterest': 0, 'dHighPriceRange': 456045.0, 'dLowPriceRange': 373135.0, 'dPriceNum': 1, 'dGenDen': 1, 'dGenNum': 1, 'dPriceQuatation': 0, 'dIssuerate': 0, 'dPriceDen': 1, 'dWarningQty': 0, 'dIssueCapital': 3618090000.0, 'dExposureMargin': 0, 'dMinRedemptionQty': 0, 'lFreezeQty': 21708}, {'pSymbol': 12825, 'pGroup': 'BL', 'pExchSeg': 'nse_cm', 'pInstType': None, 'pSymbolName': 'TCS', 'pTrdSymbol': 'TCS-BL', 'pOptionType': None, 'pScripRefKey': 'TCS-BL', 'pISIN': 'INE467B01029', 'pAssetCode': None, 'pSubGroup': None, 'pCombinedSymbol': None, 'pDesc': 'TATA CONSULTANCY SERV LT', 'pAmcCode': None, 'pContractId': None, 'dTickSize': 5, 'lLotSize': 1, 'lExpiryDate': -1, 'lMultiplier': -1, 'lPrecision': 2, 'dStrikePrice;': -1, 'pExchange': 'NSE', 'pInstName': None, 'pExpiryDate': None, 'pIssueDate': 816220800.0, 'pMaturityDate': None, 'pListingDate': 816220800.0, 'pNoDelStartDate': 0.0, 'pNoDelEndDate': 0.0, 'pBookClsStartDate': 0.0, 'pBookClsEndDate': 0.0, 'pRecordDate': 1413676800.0, 'pCreditRating': '4104.45-4187.35', 'pReAdminDate': 0.0, 'pExpulsionDate': 0.0, 'pLocalUpdateTime': 1416071130.0, 'pDeliveryUnits': None, 'pPriceUnits': None, 'pLastTradingDate': None, 'pTenderPeridEndDate': None, 'pTenderPeridStartDate': None, 'pSellVarMargin': None, 'pBuyVarMargin': None, 'pInstrumentInfo': None, 'pRemarksText': None, 'pSegment': 'CASH', 'pNav': None, 'pNavDate': None, 'pMfAmt': None, 'pSipSecurity': None, 'pFaceValue': 100.0, 'pTrdUnits': None, 'pExerciseStartDate': None, 'pExerciseEndDate': None, 'pElmMargin': None, 'pVarMargin': None, 'pTotProposedLimitValue': None, 'pScripBasePrice': None, 'pSettlementType': 'T+1', 'pCurrectionTime': 315513000.0, 'iPermittedToTrade': 0, 'iBoardLotQty': 1, 'iMaxOrderSize': 0, 'iLotSize': 1, 'dOpenInterest': 0, 'dHighPriceRange': 418735.0, 'dLowPriceRange': 410445.0, 'dPriceNum': 1, 'dGenDen': 1, 'dGenNum': 1, 'dPriceQuatation': 0, 'dIssuerate': 0, 'dPriceDen': 1, 'dWarningQty': 0, 'dIssueCapital': 3618090000.0, 'dExposureMargin': 0, 'dMinRedemptionQty': 0, 'lFreezeQty': 99999999}, {'pSymbol': 12897, 'pGroup': 'BL', 'pExchSeg': 'nse_cm', 'pInstType': None, 'pSymbolName': 'WSTCSTPAPR', 'pTrdSymbol': 'WSTCSTPAPR-BL', 'pOptionType': None, 'pScripRefKey': 'WSTCSTPAPR-BL', 'pISIN': 'INE976A01021', 'pAssetCode': None, 'pSubGroup': None, 'pCombinedSymbol': None, 'pDesc': 'WEST COAST PAPER MILLS LT', 'pAmcCode': None, 'pContractId': None, 'dTickSize': 5, 'lLotSize': 1, 'lExpiryDate': -1, 'lMultiplier': -1, 'lPrecision': 2, 'dStrikePrice;': -1, 'pExchange': 'NSE', 'pInstName': None, 'pExpiryDate': None, 'pIssueDate': 816220800.0, 'pMaturityDate': None, 'pListingDate': 816220800.0, 'pNoDelStartDate': 0.0, 'pNoDelEndDate': 0.0, 'pBookClsStartDate': 1407456000.0, 'pBookClsEndDate': 1408060800.0, 'pRecordDate': 0.0, 'pCreditRating': '540.85-551.75', 'pReAdminDate': 0.0, 'pExpulsionDate': 0.0, 'pLocalUpdateTime': 1416071122.0, 'pDeliveryUnits': None, 'pPriceUnits': None, 'pLastTradingDate': None, 'pTenderPeridEndDate': None, 'pTenderPeridStartDate': None, 'pSellVarMargin': None, 'pBuyVarMargin': None, 'pInstrumentInfo': None, 'pRemarksText': None, 'pSegment': 'CASH', 'pNav': None, 'pNavDate': None, 'pMfAmt': None, 'pSipSecurity': None, 'pFaceValue': 200.0, 'pTrdUnits': None, 'pExerciseStartDate': None, 'pExerciseEndDate': None, 'pElmMargin': None, 'pVarMargin': None, 'pTotProposedLimitValue': None, 'pScripBasePrice': None, 'pSettlementType': 'T+1', 'pCurrectionTime': 315513000.0, 'iPermittedToTrade': 0, 'iBoardLotQty': 1, 'iMaxOrderSize': 0, 'iLotSize': 1, 'dOpenInterest': 0, 'dHighPriceRange': 55175.0, 'dLowPriceRange': 54085.0, 'dPriceNum': 1, 'dGenDen': 1, 'dGenNum': 1, 'dPriceQuatation': 0, 'dIssuerate': 0, 'dPriceDen': 1, 'dWarningQty': 0, 'dIssueCapital': 66048900.0, 'dExposureMargin': 0, 'dMinRedemptionQty': 0, 'lFreezeQty': 99999999}]
+INFO 2024-11-18 10:02:17,575 ksapi Subprocess output: Warning!
+on_close callback is not Set
+on_open callback is not Set
+It is recommended to set callbacks to handle your own logic on events.
+[Res]: {'type': 'quotes', 'data': [{'last_traded_time': '18/11/2024 09:59:59', 'volume': '3313813', 'last_traded_price': '4019.50', 'last_traded_quantity': '10', 'total_buy_quantity': '0', 'total_sell_quantity': '0', 'buy_price': '0.00', 'sell_price': '0.00', 'buy_quantity': '0', 'average_price': '4071.97', 'lower_circuit_limit': '3731.35', 'upper_circuit_limit': '4560.45', '52week_high': '4592.25', '52week_low': '3356.05', 'multiplier': '1', 'precision': '2', 'change': '-126.40', 'net_change_percentage': '-3.05', 'total_traded_value': '13493747121.61', 'instrument_token': '11536', 'exchange_segment': 'nse_cm', 'trading_symbol': 'TCS-EQ', 'request_type': 'SNAP', 'ohlc': {'open': '4213.00', 'high': '4213.00', 'low': '3990.20', 'close': '4145.90'}}]}
+[Res]: Full response dumped to /home/anupamvm/Projects/py/mCube-V2/mcube/ksneo/quotes_response.csv
+[INFO]: Quote data inserted successfully.
+[Res]: Message saved to the database.
+
+INFO 2024-11-18 10:02:17,576 basehttp "GET /p/getquote HTTP/1.1" 200 26
+INFO 2024-11-18 10:02:17,576 basehttp "GET /p/getquote HTTP/1.1" 200 26
+INFO 2024-11-18 10:02:25,103 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 10787
+INFO 2024-11-18 10:02:25,103 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 10787
+INFO 2024-11-18 10:02:25,130 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 10:02:25,130 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+DEBUG 2024-11-18 10:02:51,772 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:02:52,151 connectionpool https://gw-napi.kotaksecurities.com:443 "GET /Files/1.0/masterscrip/v1/file-paths HTTP/1.1" 200 None
+DEBUG 2024-11-18 10:02:52,155 connectionpool Starting new HTTPS connection (1): lapi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:02:52,390 connectionpool https://lapi.kotaksecurities.com:443 "GET /wso2-scripmaster/v1/prod/2024-11-18/transformed/nse_fo.csv HTTP/1.1" 200 11145142
+INFO 2024-11-18 10:02:54,742 ksapi Raw search result: [{'pSymbol': '126116', 'pGroup': 'XX', 'pExchSeg': 'nse_fo', 'pInstType': 'OPTSTK', 'pSymbolName': 'TCS', 'pTrdSymbol': 'TCS24NOV4000CE', 'pOptionType': 'ce', 'pScripRefKey': 'TCS28NOV244000.00CE', 'pISIN': None, 'pAssetCode': 11536.0, 'pSubGroup': None, 'pCombinedSymbol': None, 'pDesc': None, 'pAmcCode': None, 'pContractId': None, 'dTickSize': 5, 'lLotSize': 175, 'lExpiryDate': 1417271400, 'lMultiplier': -1, 'lPrecision': 2, 'dStrikePrice;': 400000.0, 'pExchange': 'NSE', 'pInstName': 'OPTSTK', 'pExpiryDate': '29Nov2024', 'pIssueDate': 1409443200.0, 'pMaturityDate': 1417271400.0, 'pListingDate': 1409443200.0, 'pNoDelStartDate': 0.0, 'pNoDelEndDate': 0.0, 'pBookClsStartDate': 0.0, 'pBookClsEndDate': 0.0, 'pRecordDate': 0.0, 'pCreditRating': '            ', 'pReAdminDate': 0.0, 'pExpulsionDate': 0.0, 'pLocalUpdateTime': 1416072900.0, 'pDeliveryUnits': None, 'pPriceUnits': None, 'pLastTradingDate': None, 'pTenderPeridEndDate': None, 'pTenderPeridStartDate': None, 'pSellVarMargin': None, 'pBuyVarMargin': None, 'pInstrumentInfo': None, 'pRemarksText': None, 'pSegment': 'FO', 'pNav': None, 'pNavDate': None, 'pMfAmt': None, 'pSipSecurity': None, 'pFaceValue': None, 'pTrdUnits': None, 'pExerciseStartDate': 1417219200.0, 'pExerciseEndDate': 1417271400.0, 'pElmMargin': None, 'pVarMargin': None, 'pTotProposedLimitValue': None, 'pScripBasePrice': 15865, 'pSettlementType': 'Physical', 'pCurrectionTime': None, 'iPermittedToTrade': 0, 'iBoardLotQty': 1, 'iMaxOrderSize': 5251, 'iLotSize': 175, 'dOpenInterest': 182350.0, 'dHighPriceRange': 28805.0, 'dLowPriceRange': 2925.0, 'dPriceNum': 1, 'dGenDen': 1, 'dGenNum': 1, 'dPriceQuatation': 0, 'dIssuerate': 0, 'dPriceDen': 1, 'dWarningQty': 0, 'dIssueCapital': 3618090000.0, 'dExposureMargin': 3.5, 'dMinRedemptionQty': 0, 'lFreezeQty': 5251}]
+INFO 2024-11-18 10:02:56,985 ksapi Subprocess output: Warning!
+on_close callback is not Set
+on_open callback is not Set
+It is recommended to set callbacks to handle your own logic on events.
+[Res]: {'type': 'quotes', 'data': [{'last_traded_time': '18/11/2024 09:59:57', 'volume': '2635150', 'last_traded_price': '64.90', 'last_traded_quantity': '175', 'total_buy_quantity': '139825', 'total_sell_quantity': '53900', 'buy_price': '64.45', 'sell_price': '65.00', 'buy_quantity': '350', 'average_price': '65.73', 'lower_circuit_limit': '0.05', 'upper_circuit_limit': '409.05', 'open_interest': '339500', 'multiplier': '1', 'precision': '2', 'change': '-93.75', 'net_change_percentage': '-59.09', 'total_traded_value': '173208409.50', 'instrument_token': '126116', 'exchange_segment': 'nse_fo', 'trading_symbol': 'TCS24NOV4000CE', 'request_type': 'SNAP', 'ohlc': {'open': '185.00', 'high': '185.80', 'low': '51.15', 'close': '158.65'}}]}
+[Res]: Full response dumped to /home/anupamvm/Projects/py/mCube-V2/mcube/ksneo/quotes_response.csv
+[INFO]: Quote data inserted successfully.
+[Res]: Message saved to the database.
+
+INFO 2024-11-18 10:02:56,986 basehttp "GET /p/getquote?symbol=TCS&segment=nse_fo&expiry=29NOV2024&option_type=CE&strike_price=4000&index=False HTTP/1.1" 200 26
+INFO 2024-11-18 10:02:56,986 basehttp "GET /p/getquote?symbol=TCS&segment=nse_fo&expiry=29NOV2024&option_type=CE&strike_price=4000&index=False HTTP/1.1" 200 26
+INFO 2024-11-18 10:03:01,136 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 11193
+INFO 2024-11-18 10:03:01,136 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 11193
+INFO 2024-11-18 10:03:01,165 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 10:03:01,165 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+DEBUG 2024-11-18 10:03:13,733 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:03:13,991 connectionpool https://gw-napi.kotaksecurities.com:443 "GET /Files/1.0/masterscrip/v1/file-paths HTTP/1.1" 200 None
+DEBUG 2024-11-18 10:03:13,996 connectionpool Starting new HTTPS connection (1): lapi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:03:14,287 connectionpool https://lapi.kotaksecurities.com:443 "GET /wso2-scripmaster/v1/prod/2024-11-18/transformed/nse_fo.csv HTTP/1.1" 200 11145142
+INFO 2024-11-18 10:03:16,635 ksapi Raw search result: [{'pSymbol': '42948', 'pGroup': 'XX', 'pExchSeg': 'nse_fo', 'pInstType': 'OPTIDX', 'pSymbolName': 'NIFTY', 'pTrdSymbol': 'NIFTY24NOV24000CE', 'pOptionType': 'ce', 'pScripRefKey': 'NIFTY28NOV2424000.00CE', 'pISIN': None, 'pAssetCode': 26000.0, 'pSubGroup': None, 'pCombinedSymbol': None, 'pDesc': None, 'pAmcCode': None, 'pContractId': None, 'dTickSize': 5, 'lLotSize': 25, 'lExpiryDate': 1417271400, 'lMultiplier': -1, 'lPrecision': 2, 'dStrikePrice;': 2400000.0, 'pExchange': 'NSE', 'pInstName': 'OPTIDX', 'pExpiryDate': '29Nov2024', 'pIssueDate': 1409443200.0, 'pMaturityDate': 1417271400.0, 'pListingDate': 1409443200.0, 'pNoDelStartDate': 0.0, 'pNoDelEndDate': 0.0, 'pBookClsStartDate': 0.0, 'pBookClsEndDate': 0.0, 'pRecordDate': 0.0, 'pCreditRating': '            ', 'pReAdminDate': 0.0, 'pExpulsionDate': 0.0, 'pLocalUpdateTime': 1416072886.0, 'pDeliveryUnits': None, 'pPriceUnits': None, 'pLastTradingDate': None, 'pTenderPeridEndDate': None, 'pTenderPeridStartDate': None, 'pSellVarMargin': None, 'pBuyVarMargin': None, 'pInstrumentInfo': None, 'pRemarksText': None, 'pSegment': 'FO', 'pNav': None, 'pNavDate': None, 'pMfAmt': None, 'pSipSecurity': None, 'pFaceValue': None, 'pTrdUnits': None, 'pExerciseStartDate': 1417219200.0, 'pExerciseEndDate': 1417271400.0, 'pElmMargin': None, 'pVarMargin': None, 'pTotProposedLimitValue': None, 'pScripBasePrice': 6960, 'pSettlementType': 'Cash', 'pCurrectionTime': None, 'iPermittedToTrade': 0, 'iBoardLotQty': 1, 'iMaxOrderSize': 1801, 'iLotSize': 25, 'dOpenInterest': 3751220.0, 'dHighPriceRange': 23175.0, 'dLowPriceRange': 5.0, 'dPriceNum': 1, 'dGenDen': 1, 'dGenNum': 1, 'dPriceQuatation': 0, 'dIssuerate': 0, 'dPriceDen': 1, 'dWarningQty': 0, 'dIssueCapital': 1000000000000.0, 'dExposureMargin': 2.0, 'dMinRedemptionQty': 0, 'lFreezeQty': 1801}]
+INFO 2024-11-18 10:04:06,525 ksapi Subprocess output: Warning!
+on_close callback is not Set
+on_open callback is not Set
+It is recommended to set callbacks to handle your own logic on events.
+[Res]: {'type': 'quotes', 'data': [{'last_traded_price': '23453.8', 'prev_day_close': '23532.7', 'timestamp': '18/11/2024 10:01:04', 'high_price': '23606.8', 'low_price': '23350.4', 'open': '23605.3', 'precision': '2', 'change': '-78.9', 'net_change_percentage': '-0.34', 'instrument_token': 'Nifty 50', 'exchange_segment': 'nse_cm'}]}
+[Res]: Full response dumped to /home/anupamvm/Projects/py/mCube-V2/mcube/ksneo/quotes_response.csv
+[INFO]: Quote data inserted successfully.
+[Res]: Message saved to the database.
+
+INFO 2024-11-18 10:04:06,526 basehttp "GET /p/getquote?symbol=Nifty%2050&segment=nse_cm&index=True HTTP/1.1" 200 26
+INFO 2024-11-18 10:04:06,526 basehttp "GET /p/getquote?symbol=Nifty%2050&segment=nse_cm&index=True HTTP/1.1" 200 26
+INFO 2024-11-18 10:04:11,605 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 11598
+INFO 2024-11-18 10:04:11,605 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 11598
+INFO 2024-11-18 10:04:11,634 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 10:04:11,634 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 10:04:16,149 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 11598
+INFO 2024-11-18 10:04:16,149 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 11598
+INFO 2024-11-18 10:04:16,176 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 10:04:16,176 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+DEBUG 2024-11-18 10:04:30,692 connectionpool Starting new HTTPS connection (1): napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:04:31,582 connectionpool https://napi.kotaksecurities.com:443 "POST /oauth2/token HTTP/1.1" 200 None
+DEBUG 2024-11-18 10:04:31,588 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:04:31,731 connectionpool https://gw-napi.kotaksecurities.com:443 "POST /login/1.0/login/v2/validate HTTP/1.1" 201 None
+DEBUG 2024-11-18 10:04:31,735 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:04:31,939 connectionpool https://gw-napi.kotaksecurities.com:443 "POST /login/1.0/login/otp/generate HTTP/1.1" 201 None
+DEBUG 2024-11-18 10:04:31,943 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:04:32,079 connectionpool https://gw-napi.kotaksecurities.com:443 "POST /login/1.0/login/v2/validate HTTP/1.1" 201 None
+INFO 2024-11-18 10:04:32,081 ksapi Login successful and client initialized.
+INFO 2024-11-18 10:04:32,082 basehttp "GET /p/login HTTP/1.1" 200 40
+INFO 2024-11-18 10:04:32,082 basehttp "GET /p/login HTTP/1.1" 200 40
+INFO 2024-11-18 10:04:58,727 ksapi Subprocess output: Warning!
+on_close callback is not Set
+on_open callback is not Set
+It is recommended to set callbacks to handle your own logic on events.
+[OnError]: Connection to remote host was lost.
+
+INFO 2024-11-18 10:05:00,394 ksapi Subprocess output: Warning!
+on_close callback is not Set
+on_open callback is not Set
+It is recommended to set callbacks to handle your own logic on events.
+[Res]: {'type': 'quotes', 'data': [{'last_traded_price': '23453.8', 'prev_day_close': '23532.7', 'timestamp': '18/11/2024 10:01:04', 'high_price': '23606.8', 'low_price': '23350.4', 'open': '23605.3', 'precision': '2', 'change': '-78.9', 'net_change_percentage': '-0.34', 'instrument_token': 'Nifty 50', 'exchange_segment': 'nse_cm'}]}
+[Res]: Full response dumped to /home/anupamvm/Projects/py/mCube-V2/mcube/ksneo/quotes_response.csv
+[INFO]: Quote data inserted successfully.
+[Res]: Message saved to the database.
+
+INFO 2024-11-18 10:05:00,395 basehttp "GET /p/getquote?symbol=Nifty%2050&segment=nse_cm&index=True HTTP/1.1" 200 26
+INFO 2024-11-18 10:05:00,395 basehttp "GET /p/getquote?symbol=Nifty%2050&segment=nse_cm&index=True HTTP/1.1" 200 26
+INFO 2024-11-18 10:05:07,334 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 12005
+INFO 2024-11-18 10:05:07,334 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 12005
+INFO 2024-11-18 10:05:07,365 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 10:05:07,365 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+DEBUG 2024-11-18 10:05:22,064 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:05:22,384 connectionpool https://gw-napi.kotaksecurities.com:443 "GET /Files/1.0/masterscrip/v1/file-paths HTTP/1.1" 200 None
+DEBUG 2024-11-18 10:05:22,388 connectionpool Starting new HTTPS connection (1): lapi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:05:22,642 connectionpool https://lapi.kotaksecurities.com:443 "GET /wso2-scripmaster/v1/prod/2024-11-18/transformed/nse_cm.csv HTTP/1.1" 200 2758322
+INFO 2024-11-18 10:05:23,197 ksapi Raw search result: {'message': 'No data found with the given search information.Please try with other combinations.'}
+ERROR 2024-11-18 10:05:23,198 ksapi Error during search: 'pGroup'
+ERROR 2024-11-18 10:05:23,198 log Internal Server Error: /p/getquote
+ERROR 2024-11-18 10:05:23,198 log Internal Server Error: /p/getquote
+ERROR 2024-11-18 10:05:23,199 basehttp "GET /p/getquote?symbol=MARUTI%2050&segment=nse_cm&index=False HTTP/1.1" 500 34
+ERROR 2024-11-18 10:05:23,199 basehttp "GET /p/getquote?symbol=MARUTI%2050&segment=nse_cm&index=False HTTP/1.1" 500 34
+DEBUG 2024-11-18 10:05:33,188 connectionpool Starting new HTTPS connection (1): napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:05:33,395 connectionpool https://napi.kotaksecurities.com:443 "POST /oauth2/token HTTP/1.1" 200 None
+DEBUG 2024-11-18 10:05:33,401 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:05:33,552 connectionpool https://gw-napi.kotaksecurities.com:443 "POST /login/1.0/login/v2/validate HTTP/1.1" 201 None
+DEBUG 2024-11-18 10:05:33,557 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:05:33,945 connectionpool https://gw-napi.kotaksecurities.com:443 "POST /login/1.0/login/otp/generate HTTP/1.1" 201 None
+DEBUG 2024-11-18 10:05:33,949 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:05:34,103 connectionpool https://gw-napi.kotaksecurities.com:443 "POST /login/1.0/login/v2/validate HTTP/1.1" 201 None
+INFO 2024-11-18 10:05:34,105 ksapi Login successful and client initialized.
+INFO 2024-11-18 10:05:34,106 basehttp "GET /p/login HTTP/1.1" 200 40
+INFO 2024-11-18 10:05:34,106 basehttp "GET /p/login HTTP/1.1" 200 40
+DEBUG 2024-11-18 10:05:40,423 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:05:40,706 connectionpool https://gw-napi.kotaksecurities.com:443 "GET /Files/1.0/masterscrip/v1/file-paths HTTP/1.1" 200 None
+DEBUG 2024-11-18 10:05:40,710 connectionpool Starting new HTTPS connection (1): lapi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:05:40,906 connectionpool https://lapi.kotaksecurities.com:443 "GET /wso2-scripmaster/v1/prod/2024-11-18/transformed/nse_cm.csv HTTP/1.1" 200 2758322
+INFO 2024-11-18 10:05:41,489 ksapi Raw search result: {'message': 'No data found with the given search information.Please try with other combinations.'}
+ERROR 2024-11-18 10:05:41,490 ksapi Error during search: 'pGroup'
+ERROR 2024-11-18 10:05:41,490 log Internal Server Error: /p/getquote
+ERROR 2024-11-18 10:05:41,490 log Internal Server Error: /p/getquote
+ERROR 2024-11-18 10:05:41,491 basehttp "GET /p/getquote?symbol=MARUTI%2050&segment=nse_cm&index=False HTTP/1.1" 500 34
+ERROR 2024-11-18 10:05:41,491 basehttp "GET /p/getquote?symbol=MARUTI%2050&segment=nse_cm&index=False HTTP/1.1" 500 34
+DEBUG 2024-11-18 10:05:52,428 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:05:52,692 connectionpool https://gw-napi.kotaksecurities.com:443 "GET /Files/1.0/masterscrip/v1/file-paths HTTP/1.1" 200 None
+DEBUG 2024-11-18 10:05:52,697 connectionpool Starting new HTTPS connection (1): lapi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:05:52,882 connectionpool https://lapi.kotaksecurities.com:443 "GET /wso2-scripmaster/v1/prod/2024-11-18/transformed/nse_cm.csv HTTP/1.1" 200 2758322
+INFO 2024-11-18 10:05:53,338 ksapi Raw search result: {'message': 'No data found with the given search information.Please try with other combinations.'}
+ERROR 2024-11-18 10:05:53,339 ksapi Error during search: 'pGroup'
+ERROR 2024-11-18 10:05:53,339 log Internal Server Error: /p/getquote
+ERROR 2024-11-18 10:05:53,339 log Internal Server Error: /p/getquote
+ERROR 2024-11-18 10:05:53,340 basehttp "GET /p/getquote?symbol=MARUTI%2050&segment=nse_cm&index=False HTTP/1.1" 500 34
+ERROR 2024-11-18 10:05:53,340 basehttp "GET /p/getquote?symbol=MARUTI%2050&segment=nse_cm&index=False HTTP/1.1" 500 34
+DEBUG 2024-11-18 10:06:08,979 connectionpool Starting new HTTPS connection (1): gw-napi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:06:09,374 connectionpool https://gw-napi.kotaksecurities.com:443 "GET /Files/1.0/masterscrip/v1/file-paths HTTP/1.1" 200 None
+DEBUG 2024-11-18 10:06:09,378 connectionpool Starting new HTTPS connection (1): lapi.kotaksecurities.com:443
+DEBUG 2024-11-18 10:06:09,581 connectionpool https://lapi.kotaksecurities.com:443 "GET /wso2-scripmaster/v1/prod/2024-11-18/transformed/nse_cm.csv HTTP/1.1" 200 2758322
+INFO 2024-11-18 10:06:10,321 ksapi Raw search result: [{'pSymbol': 10999, 'pGroup': 'EQ', 'pExchSeg': 'nse_cm', 'pInstType': None, 'pSymbolName': 'MARUTI', 'pTrdSymbol': 'MARUTI-EQ', 'pOptionType': None, 'pScripRefKey': 'MARUTI', 'pISIN': 'INE585B01010', 'pAssetCode': None, 'pSubGroup': None, 'pCombinedSymbol': None, 'pDesc': 'MARUTI SUZUKI INDIA LTD.', 'pAmcCode': None, 'pContractId': None, 'dTickSize': 5, 'lLotSize': 1, 'lExpiryDate': -1, 'lMultiplier': -1, 'lPrecision': 2, 'dStrikePrice;': -1, 'pExchange': 'NSE', 'pInstName': None, 'pExpiryDate': None, 'pIssueDate': 742176000.0, 'pMaturityDate': None, 'pListingDate': 742176000.0, 'pNoDelStartDate': 0.0, 'pNoDelEndDate': 0.0, 'pBookClsStartDate': 1407110400.0, 'pBookClsEndDate': 1409184000.0, 'pRecordDate': 0.0, 'pCreditRating': '9905.45-12106.65', 'pReAdminDate': 0.0, 'pExpulsionDate': 0.0, 'pLocalUpdateTime': 1416077499.0, 'pDeliveryUnits': None, 'pPriceUnits': None, 'pLastTradingDate': None, 'pTenderPeridEndDate': None, 'pTenderPeridStartDate': None, 'pSellVarMargin': None, 'pBuyVarMargin': None, 'pInstrumentInfo': None, 'pRemarksText': None, 'pSegment': 'CASH', 'pNav': None, 'pNavDate': None, 'pMfAmt': None, 'pSipSecurity': None, 'pFaceValue': 500.0, 'pTrdUnits': None, 'pExerciseStartDate': None, 'pExerciseEndDate': None, 'pElmMargin': 0.0, 'pVarMargin': 20.0, 'pTotProposedLimitValue': None, 'pScripBasePrice': None, 'pSettlementType': 'T+1', 'pCurrectionTime': 315513000.0, 'iPermittedToTrade': 0, 'iBoardLotQty': 1, 'iMaxOrderSize': 8803, 'iLotSize': 1, 'dOpenInterest': 0, 'dHighPriceRange': 1210660.0, 'dLowPriceRange': 990545.0, 'dPriceNum': 1, 'dGenDen': 1, 'dGenNum': 1, 'dPriceQuatation': 0, 'dIssuerate': 0, 'dPriceDen': 1, 'dWarningQty': 0, 'dIssueCapital': 314403000.0, 'dExposureMargin': 0, 'dMinRedemptionQty': 0, 'lFreezeQty': 8803}, {'pSymbol': 12587, 'pGroup': 'BL', 'pExchSeg': 'nse_cm', 'pInstType': None, 'pSymbolName': 'MARUTI', 'pTrdSymbol': 'MARUTI-BL', 'pOptionType': None, 'pScripRefKey': 'MARUTI-BL', 'pISIN': 'INE585B01010', 'pAssetCode': None, 'pSubGroup': None, 'pCombinedSymbol': None, 'pDesc': 'MARUTI SUZUKI INDIA LTD.', 'pAmcCode': None, 'pContractId': None, 'dTickSize': 5, 'lLotSize': 1, 'lExpiryDate': -1, 'lMultiplier': -1, 'lPrecision': 2, 'dStrikePrice;': -1, 'pExchange': 'NSE', 'pInstName': None, 'pExpiryDate': None, 'pIssueDate': 816220800.0, 'pMaturityDate': None, 'pListingDate': 816220800.0, 'pNoDelStartDate': 0.0, 'pNoDelEndDate': 0.0, 'pBookClsStartDate': 1407110400.0, 'pBookClsEndDate': 1409184000.0, 'pRecordDate': 0.0, 'pCreditRating': '10896.00-11116.10', 'pReAdminDate': 0.0, 'pExpulsionDate': 0.0, 'pLocalUpdateTime': 1416071129.0, 'pDeliveryUnits': None, 'pPriceUnits': None, 'pLastTradingDate': None, 'pTenderPeridEndDate': None, 'pTenderPeridStartDate': None, 'pSellVarMargin': None, 'pBuyVarMargin': None, 'pInstrumentInfo': None, 'pRemarksText': None, 'pSegment': 'CASH', 'pNav': None, 'pNavDate': None, 'pMfAmt': None, 'pSipSecurity': None, 'pFaceValue': 500.0, 'pTrdUnits': None, 'pExerciseStartDate': None, 'pExerciseEndDate': None, 'pElmMargin': None, 'pVarMargin': None, 'pTotProposedLimitValue': None, 'pScripBasePrice': None, 'pSettlementType': 'T+1', 'pCurrectionTime': 315513000.0, 'iPermittedToTrade': 0, 'iBoardLotQty': 1, 'iMaxOrderSize': 0, 'iLotSize': 1, 'dOpenInterest': 0, 'dHighPriceRange': 1111610.0, 'dLowPriceRange': 1089600.0, 'dPriceNum': 1, 'dGenDen': 1, 'dGenNum': 1, 'dPriceQuatation': 0, 'dIssuerate': 0, 'dPriceDen': 1, 'dWarningQty': 0, 'dIssueCapital': 314403000.0, 'dExposureMargin': 0, 'dMinRedemptionQty': 0, 'lFreezeQty': 99999999}]
+INFO 2024-11-18 10:06:14,555 ksapi Subprocess output: Warning!
+on_close callback is not Set
+on_open callback is not Set
+It is recommended to set callbacks to handle your own logic on events.
+[Res]: {'type': 'quotes', 'data': [{'last_traded_time': '18/11/2024 09:59:57', 'volume': '333435', 'last_traded_price': '11093.95', 'last_traded_quantity': '1', 'total_buy_quantity': '0', 'total_sell_quantity': '0', 'buy_price': '0.00', 'sell_price': '0.00', 'buy_quantity': '0', 'average_price': '11068.76', 'lower_circuit_limit': '9905.45', 'upper_circuit_limit': '12106.65', '52week_high': '13680.00', '52week_low': '9737.65', 'multiplier': '1', 'precision': '2', 'change': '87.90', 'net_change_percentage': '0.80', 'total_traded_value': '3690711990.60', 'instrument_token': '10999', 'exchange_segment': 'nse_cm', 'trading_symbol': 'MARUTI-EQ', 'request_type': 'SNAP', 'ohlc': {'open': '10950.00', 'high': '11182.95', 'low': '10915.00', 'close': '11006.05'}}]}
+[Res]: Full response dumped to /home/anupamvm/Projects/py/mCube-V2/mcube/ksneo/quotes_response.csv
+[INFO]: Quote data inserted successfully.
+[Res]: Message saved to the database.
+
+INFO 2024-11-18 10:06:14,556 basehttp "GET /p/getquote?symbol=MARUTI&segment=nse_cm&index=False HTTP/1.1" 200 26
+INFO 2024-11-18 10:06:14,556 basehttp "GET /p/getquote?symbol=MARUTI&segment=nse_cm&index=False HTTP/1.1" 200 26
+INFO 2024-11-18 10:06:17,696 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 12410
+INFO 2024-11-18 10:06:17,696 basehttp "GET /admin/r/quote/ HTTP/1.1" 200 12410
+INFO 2024-11-18 10:06:17,724 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 10:06:17,724 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-11-18 10:06:48,990 utils Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO 2024-11-18 10:06:48,991 utils NumExpr defaulting to 8 threads.
