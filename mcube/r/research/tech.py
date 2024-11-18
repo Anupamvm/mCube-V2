@@ -30,4 +30,5 @@
 #getResistance1
 #getSupport2
 #getResistance2
+#getBeta
 #model1 ... #model2 ...#model3 etc

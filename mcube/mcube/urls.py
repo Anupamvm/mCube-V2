@@ -32,6 +32,9 @@ urlpatterns = [
     path('p/', p.views.home, name='home'),
     path('p/login', p.views.login_view, name='login'),
     path('p/holdings', p.views.get_holdings_view, name='getholdings'),
+    path('p/master', p.views.update_master, name='updatemaster'),
+    path('p/getquote', p.views.get_quote, name='getquote'),
+    path('p/search', p.views.search, name='search'),
 
     path('r/', r.views.home, name='home'),
     path('a/', a.views.home, name='home'),

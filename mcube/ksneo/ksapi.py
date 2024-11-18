@@ -4,16 +4,26 @@ import pandas as pd
 from django.conf import settings
 from p.models import Holding
 import logging
+import os
+import requests
+import shutil
+from datetime import datetime
+import subprocess
+
 
 logger = logging.getLogger(__name__)
 
+# Global client instance
 client = None
 
+# Callbacks
 def on_message(message):
-    logger.info(f"Message: {message}")
+    logger.info(f"Message received: {message}")
+    print('[Res]:', message)
 
 def on_error(error_message):
-    logger.error(f"Error: {error_message}")
+    logger.error(f"Error occurred: {error_message}")
+    print('[Error]:', error_message)
 
 def on_close(message):
     logger.info(f"Connection closed: {message}")
@@ -21,7 +31,8 @@ def on_close(message):
 def on_open(message):
     logger.info(f"Connection opened: {message}")
 
-def login():
+# Login function
+def ks_login():
     global client
     try:
         client = NeoAPI(
@@ -35,84 +46,58 @@ def login():
         )
         client.session_2fa(OTP=settings.KSNEO.get("MPIN"))
 
+        # Attach callbacks
         client.on_message = on_message
         client.on_error = on_error
         client.on_close = on_close
         client.on_open = on_open
+
         logger.info("Login successful and client initialized.")
     except Exception as e:
         logger.error(f"Error during login: {e}")
         raise
 
-def logout():
-    client.logout()
+# Logout function
+def ks_logout():
+    global client
+    try:
+        if client:
+            client.logout()
+            logger.info("Logout successful.")
+        else:
+            logger.warning("Client not initialized.")
+    except Exception as e:
+        logger.error(f"Error during logout: {e}")
 
+# Verify login
 def verifylogin():
     if client is None:
         raise Exception("Client is not initialized. Please login first.")
     return True
 
-from p.models import Holding
-import logging
-
-logger = logging.getLogger(__name__)
-
-from datetime import datetime
-from p.models import Holding
-import logging
-
-logger = logging.getLogger(__name__)
-
+# Parse date utility
 def parse_date(date_string):
-    """
-    Parse a date string in the format '26-DEC-2024' to 'YYYY-MM-DD'.
-    """
     try:
         return datetime.strptime(date_string, "%d-%b-%Y").date()
     except (ValueError, TypeError):
-        # Return None if the date is invalid or not provided
         return None
 
-from datetime import datetime
-from p.models import Holding
-import logging
-
-logger = logging.getLogger(__name__)
-
-def parse_date(date_string):
-    """
-    Parse a date string in the format '26-DEC-2024' to 'YYYY-MM-DD'.
-    """
-    try:
-        return datetime.strptime(date_string, "%d-%b-%Y").date()
-    except (ValueError, TypeError):
-        # Return None if the date is invalid or not provided
-        return None
-
-def getholdings():
+# Fetch holdings and update database
+def ks_getholdings():
     global client
     verifylogin()
     try:
-        # Fetch holdings data
         holdings_response = client.holdings()
-        
-        # Delete all existing records in the Holding table
         Holding.objects.all().delete()
         logger.info("All existing holdings have been deleted.")
-        
-        # Extract the 'data' key
+
         holdings_data = holdings_response.get("data", [])
-        
         if not holdings_data:
             logger.info("No holdings data found.")
             return
 
-        # Save each holding to the database
         for holding in holdings_data:
-            # Set display_symbol to symbol if display_symbol is None
             display_symbol = holding.get("displaySymbol") or holding.get("symbol")
-            print(display_symbol)
-            # Save the holding
             Holding.objects.create(
                 display_symbol=display_symbol,
                 average_price=holding.get("averagePrice"),
@@ -134,13 +119,101 @@ def getholdings():
             )
         logger.info("All holdings have been saved successfully.")
         return holdings_data
-
     except Exception as e:
         logger.error(f"Error fetching or saving holdings: {e}")
         raise
 
+# Update script master
+def ks_updatemaster():
+    verifylogin()
+    scriptdata = client.scrip_master()
+    files_paths = scriptdata.get('filesPaths', [])
+    base_folder = scriptdata.get('baseFolder', '')
+
+    target_folder = os.path.join("mcube", "ksneo", "ks_master")
+    os.makedirs(target_folder, exist_ok=True)
+    shutil.rmtree(target_folder)
+    os.makedirs(target_folder)
+
+    for file_path in files_paths:
+        file_url = f"{base_folder}/{file_path}" if not file_path.startswith('http') else file_path
+        try:
+            response = requests.get(file_url, stream=True)
+            response.raise_for_status()
+            file_name = os.path.basename(file_url)
+            file_save_path = os.path.join(target_folder, file_name)
+            with open(file_save_path, 'wb') as file:
+                shutil.copyfileobj(response.raw, file)
+            logger.info(f"Downloaded: {file_name}")
+        except requests.RequestException as e:
+            logger.error(f"Failed to download {file_url}: {e}")
+
+    logger.info(f"All files have been saved in the '{target_folder}' folder.")
+
+def ks_search_eq(symbol="TCS", exch_seg="nse_cm"):
+    verifylogin()
+    try:
+        # Perform search
+        search = client.search_scrip(
+            exchange_segment=exch_seg, symbol=symbol, expiry="", option_type="", strike_price=""
+        )
+        logger.info(f"Raw search result: {search}")
+
+        # Convert to DataFrame
+        df = pd.DataFrame(search if isinstance(search, list) else [search])
+
+        # Add conditional filtering logic
+        if exch_seg == "nse_cm":
+            # For NSE Cash Market, validate trading symbol as '{symbol}-EQ'
+            filtered = df[
+                (df['pGroup'] == 'EQ') &
+                (df['pTrdSymbol'] == f"{symbol}-EQ")
+            ]
+        else:
+            # For other segments, filter only by 'EQ' group
+            filtered = df[df['pGroup'] == 'EQ']
+
+        # Check for results and return
+        if not filtered.empty:
+            return filtered.iloc[0]['pSymbol']  # Return the first match
+
+        raise ValueError(f"No matching EQ symbol found for {symbol} in {exch_seg}")
+    except Exception as e:
+        logger.error(f"Error during search: {e}")
+        raise
 
 
+
+# Fetch quotes with callbacks
+def ks_quote(token, segment="nse_cm",index="False"):
+    try:
+        # Get the absolute path to get_quote.py in the ksneo folder
+        base_dir = os.path.dirname(os.path.abspath(__file__))  # Get the current file's directory
+        script_path = os.path.join(base_dir, "get_quote.py")
+
+        # Check if the file exists
+        if not os.path.exists(script_path):
+            raise FileNotFoundError(f"get_quote.py not found at {script_path}")
+
+        # Run the script as a subprocess
+        result = subprocess.run(
+            ["python3", script_path, "--symbol", str(token), "--exchange", segment, "--index", index],
+            capture_output=True,
+            text=True
+        )
+
+        # Log the output and error streams
+        if result.returncode == 0:
+            logger.info(f"Subprocess output: {result.stdout}")
+        else:
+            logger.error(f"Subprocess error: {result.stderr}")
+            raise Exception(f"Subprocess failed: {result.stderr}")
+    except FileNotFoundError as e:
+        logger.error(f"File not found: {e}")
+        raise
+    except Exception as e:
+        logger.error(f"Error when calling get Quote API: {e}")
+        raise
 
 #logout - return status
 #savequote - Async call
