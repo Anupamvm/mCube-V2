@@ -15,6 +15,9 @@ logger = logging.getLogger(__name__)
 
 # Global client instance
 client = None
+session_token = None
+sid = None
+server_id = None
 
 # Callbacks
 def on_message(message):
@@ -33,7 +36,11 @@ def on_open(message):
 
 # Login function
 def ks_login():
+    
     global client
+    global session_token
+    global sid 
+    global server_id
     try:
         client = NeoAPI(
             consumer_key=settings.KSNEO.get("CONSUMER_KEY"),
@@ -44,7 +51,11 @@ def ks_login():
             pan=settings.KSNEO.get("PAN"),
             password=settings.KSNEO.get("PASSWORD")
         )
-        client.session_2fa(OTP=settings.KSNEO.get("MPIN"))
+        session = client.session_2fa(OTP=settings.KSNEO.get("MPIN"))
+
+        session_token = session.get("data", {}).get("token", "")
+        sid = session.get("data", {}).get("sid", "")
+        server_id = session.get("data", {}).get("hsServerId", "")
 
         # Attach callbacks
         client.on_message = on_message
@@ -150,12 +161,12 @@ def ks_updatemaster():
 
     logger.info(f"All files have been saved in the '{target_folder}' folder.")
 
-def ks_search_eq(symbol="TCS", exch_seg="nse_cm"):
+def ks_search_eq(symbol="TCS", exch_seg="nse_cm",expirydate="",optype="",stkprice=""):
     verifylogin()
     try:
         # Perform search
         search = client.search_scrip(
-            exchange_segment=exch_seg, symbol=symbol, expiry="", option_type="", strike_price=""
+            exchange_segment=exch_seg, symbol=symbol, expiry=expirydate, option_type=optype, strike_price=stkprice
         )
         logger.info(f"Raw search result: {search}")
 
@@ -171,7 +182,8 @@ def ks_search_eq(symbol="TCS", exch_seg="nse_cm"):
             ]
         else:
             # For other segments, filter only by 'EQ' group
-            filtered = df[df['pGroup'] == 'EQ']
+            filtered = df.iloc[:1]
+
 
         # Check for results and return
         if not filtered.empty:
@@ -185,7 +197,11 @@ def ks_search_eq(symbol="TCS", exch_seg="nse_cm"):
 
 
 # Fetch quotes with callbacks
-def ks_quote(token, segment="nse_cm",index="False"):
+def ks_quote(token, segment="nse_cm", index="False", login=False):
+    global client
+    global session_token
+    global sid 
+    global server_id
     try:
         # Get the absolute path to get_quote.py in the ksneo folder
         base_dir = os.path.dirname(os.path.abspath(__file__))  # Get the current file's directory
@@ -195,12 +211,19 @@ def ks_quote(token, segment="nse_cm",index="False"):
         if not os.path.exists(script_path):
             raise FileNotFoundError(f"get_quote.py not found at {script_path}")
 
+        # Prepare the command
+        cmd = [
+            "python3", script_path, "--symbol", str(token), "--exchange", segment, "--index", index, "--login", str(login).lower()
+        ]
+
+        # If not logging in, add session details
+        if not login:
+            if not (session_token and sid and server_id):
+                raise ValueError("Missing session_token, sid, or server_id for quote retrieval without login.")
+            cmd.extend(["--session_token", session_token, "--sid", sid, "--server_id", server_id])
+
         # Run the script as a subprocess
-        result = subprocess.run(
-            ["python3", script_path, "--symbol", str(token), "--exchange", segment, "--index", index],
-            capture_output=True,
-            text=True
-        )
+        result = subprocess.run(cmd, capture_output=True, text=True)
 
         # Log the output and error streams
         if result.returncode == 0:
@@ -214,6 +237,7 @@ def ks_quote(token, segment="nse_cm",index="False"):
     except Exception as e:
         logger.error(f"Error when calling get Quote API: {e}")
         raise
+
 
 #logout - return status
 #savequote - Async call

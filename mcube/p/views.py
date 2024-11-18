@@ -57,13 +57,25 @@ def update_master(request):
 def get_quote(request):
     try:
         # Call the ks_quote function with the required parameters
+        #Example: http://127.0.0.1:8000/p/getquote?symbol=NIFTY&segment=nse_fo&expiry=29NOV2024&option_type=CE&strike_price=24000&index=True
+        #Example: http://127.0.0.1:8000/p/getquote?symbol=TCS&segment=nse_fo&expiry=29NOV2024&option_type=CE&strike_price=4000&index=False
+        #Example: http://127.0.0.1:8000/p/getquote?symbol=Nifty%2050&segment=nse_cm&index=True
+
         symbol = request.GET.get('symbol', 'TCS')  # Default to 'YESBANK'
         index = request.GET.get('index', 'False')  # Default to 'YESBANK'
-        kscode = symbol
-        if(not bool(strtobool(index))):
-            kscode = ks_search_eq(symbol)
 
-        ks_quote(kscode, "nse_cm",index)
+        segment = request.GET.get('segment', 'nse_cm')  # Default to 'nse_cm' or 'nse_fo'
+        expiry = request.GET.get('expiry', '')  # Default to empty
+        option_type = request.GET.get('option_type', '')  # Default to empty
+        strike_price = request.GET.get('strike_price', '')  # Default to empty
+
+        kscode = symbol
+        if(not bool(strtobool(index)) or segment=="nse_fo"):
+            kscode = ks_search_eq(
+            symbol=symbol, exch_seg=segment,expirydate=expiry,optype=option_type,stkprice=strike_price
+        )
+        #def ks_quote(token, segment="nse_cm", index="False", login=False):
+        ks_quote(kscode, segment,index,login=False)
         return HttpResponse("Quote successfully called.")
     except Exception as e:
         return HttpResponse(f"Error during quote fetch: {e}", status=500)
@@ -80,7 +92,7 @@ def search(request):
 
         # Call the ks_search function with the extracted parameters
         result = ks_search_eq(
-            symbol=symbol,
+            symbol=symbol, exch_seg=segment,expirydate=expiry,optype=option_type,stkprice=strike_price
         )
         # Return the result or a success message
         return HttpResponse(f"Search response: {result}")

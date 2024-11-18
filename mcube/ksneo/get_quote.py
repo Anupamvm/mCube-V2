@@ -7,14 +7,6 @@ from neo_api_client import NeoAPI
 # Set the maximum threads for NumExpr
 os.environ["NUMEXPR_MAX_THREADS"] = "8"  # Adjust as needed for your system
 
-# Assigning each key from the KSNEO dictionary to a separate variable
-CONSUMER_KEY = "NkmJfGnAehLpdDm3wSPFR7iCMj4a"
-CONSUMER_SECRET = "H8Q60_oBa2PkSOBJXnk7zbOvGqUa"
-USERNAME = "CLIENT46778"
-PASSWORD = "Anupamvm2@"
-PAN = "AAQHA1835B"
-MPIN = "284321"
-
 # Filepath for the CSV
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CSV_FILE = os.path.join(BASE_DIR, "quotes_response.csv")
@@ -42,48 +34,63 @@ def on_message(message):
 def on_error(message):
     print('[OnError]:', message)
 
-def str_to_bool(value):
-    """Convert a string to boolean."""
-    if value.lower() in {'true', '1', 'yes', 'y'}:
-        return True
-    elif value.lower() in {'false', '0', 'no', 'n'}:
-        return False
-    else:
-        raise argparse.ArgumentTypeError(f"Invalid boolean value: {value}")
-
-def main(symbol, exchange, index="false"):
-    index = str_to_bool(index)  # Convert the index value to a boolean
-    client = NeoAPI(
-        consumer_key=CONSUMER_KEY,
-        consumer_secret=CONSUMER_SECRET,
-        environment='prod'
-    )
-    client.login(
-        pan=PAN,
-        password=PASSWORD
-    )
-    client.session_2fa(OTP=MPIN)
-
-    # Setup Callbacks for websocket events (Optional)
-    client.on_message = on_message
-    client.on_error = on_error
-
-    # Define instrument tokens dynamically
-    inst_tokens = [{"instrument_token": symbol, "exchange_segment": exchange}]
-
+def main(symbol, exchange, index, login, session_token, sid, server_id):
     try:
+        if login.lower() == "true":
+            # Perform login-based quote retrieval
+            client = NeoAPI(
+                consumer_key="NkmJfGnAehLpdDm3wSPFR7iCMj4a",
+                consumer_secret="H8Q60_oBa2PkSOBJXnk7zbOvGqUa",
+                environment='prod'
+            )
+            client.login(pan="AAQHA1835B", password="Anupamvm2@")
+            client.session_2fa(OTP="284321")
+
+            client.on_message = on_message
+            client.on_error = on_error
+        else:
+            # Use session-based quote retrieval
+            client = NeoAPI(
+                consumer_key="NkmJfGnAehLpdDm3wSPFR7iCMj4a",
+                consumer_secret="H8Q60_oBa2PkSOBJXnk7zbOvGqUa",
+                environment='prod',
+                access_token=session_token
+            )
+            client.on_message = on_message
+            client.on_error = on_error
+
+        # Define instrument tokens dynamically
+        inst_tokens = [{"instrument_token": symbol, "exchange_segment": exchange}]
+
         # Fetch quotes
-        client.quotes(instrument_tokens=inst_tokens, quote_type="", isIndex=index)
-        client.logout()
+        client.quotes(
+            instrument_tokens=inst_tokens,
+            quote_type="",
+            isIndex=index.lower() == "true",
+            session_token=session_token,
+            sid=sid,
+            server_id=server_id
+        )
     except Exception as e:
-        print("Exception when calling get Quote api->quotes: %s\n" % e)
-        client.logout()
+        print(f"Exception during quote retrieval: {e}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fetch market data for a symbol.")
-    parser.add_argument("--symbol", type=str, required=True, help="Instrument token of the symbol")
-    parser.add_argument("--exchange", type=str, required=True, help="Exchange segment for the symbol")
-    parser.add_argument("--index", type=str, required=True, help="Specify whether the symbol is an index (e.g., true/false)")
+    parser.add_argument("--symbol", type=str, required=True, help="Instrument token or symbol name")
+    parser.add_argument("--exchange", type=str, required=True, help="Exchange segment (e.g., nse_cm)")
+    parser.add_argument("--index", type=str, required=True, help="Specify whether the symbol is an index (true/false)")
+    parser.add_argument("--login", type=str, required=True, help="Specify whether to login (true/false)")
+    parser.add_argument("--session_token", type=str, help="Session token (required if login is false)")
+    parser.add_argument("--sid", type=str, help="SID (required if login is false)")
+    parser.add_argument("--server_id", type=str, help="Server ID (required if login is false)")
     args = parser.parse_args()
 
-    main(symbol=args.symbol, exchange=args.exchange, index=args.index)
+    main(
+        symbol=args.symbol,
+        exchange=args.exchange,
+        index=args.index,
+        login=args.login,
+        session_token=args.session_token,
+        sid=args.sid,
+        server_id=args.server_id
+    )
