@@ -198,7 +198,7 @@ def main(symbol, exchange, index, login, session_token, sid, server_id):
                 consumer_secret="H8Q60_oBa2PkSOBJXnk7zbOvGqUa",
                 environment='prod'
             )
-            client.login(pan="AAQHA1835B", password="Anupamvm2@")
+            client.login(pan="AAQHA1835B", password="aNUPAMVM2@")
             client.session_2fa(OTP="284321")
 
             client.on_message = on_message

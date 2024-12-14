@@ -60,7 +60,7 @@ def get_quote(request):
         #Example: http://127.0.0.1:8000/p/getquote?symbol=NIFTY&segment=nse_fo&expiry=29NOV2024&option_type=CE&strike_price=24000&index=True
         #Example: http://127.0.0.1:8000/p/getquote?symbol=TCS&segment=nse_fo&expiry=29NOV2024&option_type=CE&strike_price=4000&index=False
         #Example: http://127.0.0.1:8000/p/getquote?symbol=Nifty%2050&segment=nse_cm&index=True
-        #Example: http://127.0.0.1:8000/p/getquote?symbol=MARUTI&segment=nse_fo&index=False
+        #Example: http://127.0.0.1:8000/p/getquote?symbol=MARUTI&segment=nse_cm&index=False
 
         symbol = request.GET.get('symbol', 'TCS')  # Default to 'YESBANK'
         index = request.GET.get('index', 'False')  # Default to 'YESBANK'
