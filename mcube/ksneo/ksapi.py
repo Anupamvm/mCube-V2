@@ -217,10 +217,13 @@ def ks_quote(token, segment="nse_cm", index="False", login=False):
         ]
 
         # If not logging in, add session details
-        if not login:
-            if not (session_token and sid and server_id):
-                raise ValueError("Missing session_token, sid, or server_id for quote retrieval without login.")
-            cmd.extend(["--session_token", session_token, "--sid", sid, "--server_id", server_id])
+        if not (session_token.strip() and sid.strip() and server_id.strip()):
+            print("********************************")
+            print(session_token)
+            print(sid)
+            print(server_id)
+            raise ValueError("Missing session_token, sid, or server_id for quote retrieval without login.")
+        cmd.extend(["--session_token", session_token, "--sid", sid, "--server_id", server_id])
 
         # Run the script as a subprocess
         result = subprocess.run(cmd, capture_output=True, text=True)

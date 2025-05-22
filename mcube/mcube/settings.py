@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'p',
     'r',
     'a',
+    'breeze',
+    'mcube',
+    'ksneo',
 ]
 
 MIDDLEWARE = [

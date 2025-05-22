@@ -38,4 +38,5 @@ urlpatterns = [
 
     path('r/', r.views.home, name='home'),
     path('a/', a.views.home, name='home'),
+    path('breeze/', include('breeze.urls')),
 ]

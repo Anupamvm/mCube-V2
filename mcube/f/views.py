@@ -57,6 +57,10 @@ def verifyTrade(request):
         - Corporate action next 30 days and past 30 days
         - Overall nifty trend 1 weekm 2 week,  3week, 1 month
         - Fii and DII inflows in Nifty in general
+        - Check Risk functions defined
+        - Check Sizing functions
+        - Take positions
+ 
 
     '''
 
